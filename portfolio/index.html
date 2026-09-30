@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="topbar">
+  <!-- <header class="topbar">
     <div class="topbar-inner">
       <a class="brand" href="#top" aria-label="처음으로">KO EUNSAEM</a>
       <nav aria-label="주요 메뉴">
@@ -22,12 +22,12 @@
         <a href="#contact">CONTACT</a>
       </nav>
     </div>
-  </header>
+  </header> -->
 
   <main id="top">
     <section class="hero section-shell">
-      <p class="eyebrow">BACKEND DEVELOPER · PORTFOLIO 2026</p>
-      <h1><span class="hero-line">기술을 모두의</span><span class="hero-line hero-accent">당연함으로 만듭니다.</span></h1>
+      <p class="eyebrow">Backend Developer · Ko Eunsaem</p>
+      <h1><span class="hero-line">편리한 기능을 넘어,</span><span class="hero-line"><span class="hero-accent">누구나 믿고 쓰는 기본</span>을 만듭니다.</span></h1>
       <div class="hero-bottom">
         <div class="work-style" aria-label="일하는 방식">
           <strong>HOW I WORK</strong>
@@ -37,22 +37,13 @@
             <li>마지막 문제까지 책임집니다.</li>
           </ul>
         </div>
-      </div>
-      <div class="scroll-hint" aria-hidden="true"><span>SCROLL TO EXPLORE</span><i></i></div>
-    </section>
-
-    <section class="intro section-shell" aria-labelledby="intro-title">
-      <div>
-        <h2 id="intro-title">좋은 기능을 넘어,<br>누구나 믿고 쓰는 기본을 만듭니다.</h2>
-      </div>
-      <div class="intro-body">
-        <p class="lead">AI 모델, 웹 화면, 데이터베이스가 따로 존재하는 데서 끝내지 않고 사용자가 실제로 이용할 수 있는 하나의 흐름으로 연결해 왔습니다.</p>
-        <dl class="profile-list">
-          <div><dt>FOCUS</dt><dd>Backend · API · AI Integration</dd></div>
-          <div><dt>STACK</dt><dd>.NET Core · Spring Boot · Next.js · SQL</dd></div>
-          <div><dt>APPROACH</dt><dd>빠른 학습 · 구조화 · 끝까지 원인 추적</dd></div>
+        <dl class="profile-list hero-profile">
+          <div><dt><span class="profile-tag">FOCUS</span></dt><dd>Backend · AI Integration</dd></div>
+          <div><dt><span class="profile-tag">STACK</span></dt><dd>.NET Core · Spring Boot · Next.js · SQL</dd></div>
+          <div><dt><span class="profile-tag">APPROACH</span></dt><dd>빠른 학습 · 구조화 · 끝까지 원인 추적</dd></div>
         </dl>
       </div>
+      <!-- <div class="scroll-hint" aria-hidden="true"><span>SCROLL TO EXPLORE</span><i></i></div> -->
     </section>
 
     <section id="projects" class="projects">
@@ -66,7 +57,7 @@
           <div class="case-study">
             <section><h3>배경</h3><p>기존 LMS에 AI 자막 생성과 다국어 번역 기능을 더하는 산학협력 프로젝트였습니다. AI 결과를 만드는 것뿐 아니라 기존 MVC 시스템과 새 React 화면 사이에서 영상·자막 데이터가 안정적으로 오가야 했습니다.</p></section>
             <section><h3>문제</h3><p>프론트엔드와 기존 백엔드의 응답 방식이 달랐고, AI가 만든 SRT 파일은 HTML5 영상에서 바로 재생할 수 없었습니다. 같은 영상에 자막 생성을 반복 요청하면 불필요한 연산도 발생했습니다.</p></section>
-            <section><h3>설계 판단</h3><p>각 시스템을 다시 만드는 대신 경계에서 데이터를 표준화했습니다. React가 필요한 데이터를 JSON으로 제공하고, AI 처리 결과는 파일 단위로 저장·재사용하며, 재생 직전 웹 표준 형식으로 변환하는 흐름을 설계했습니다.</p></section>
+            <section><h3>설계</h3><p>각 시스템을 다시 만드는 대신 경계에서 데이터를 표준화했습니다. React가 필요한 데이터를 JSON으로 제공하고, AI 처리 결과는 파일 단위로 저장·재사용하며, 재생 직전 웹 표준 형식으로 변환하는 흐름을 설계했습니다.</p></section>
             <section><h3>구현</h3>
               <ul>
                 <li>영상·자막·DB 정보를 전달하는 JSON API 구현</li>
@@ -80,13 +71,12 @@
           </div>
 
           <aside class="project-aside">
-            <div class="note note-blue rotate-right"><span class="tape"></span><strong>MY CONTRIBUTION</strong><p>기존 MVC와 React 연결</p><p>백엔드 API 및 데이터 흐름 구현</p><p>자막 파일 재사용·형식 변환</p></div>
-            <figure class="evidence evidence-original"><button type="button" data-lightbox="assets/subtitle-data-flow.png" aria-label="자막 생성 데이터 흐름 크게 보기"><img src="assets/subtitle-data-flow.png" alt="사용자, 메인 서버, 데이터베이스, 영상 서버와 AI 서버를 연결한 자막 생성 데이터 흐름"></button><figcaption>Data flow &amp; architecture · 원본 설계 자료</figcaption></figure>
+            <div class="note note-yellow rotate-right"><span class="tape"></span><strong>MY CONTRIBUTION</strong><p>기존 MVC와 React 연결</p><p>백엔드 API 및 데이터 흐름 구현</p><p>자막 파일 재사용·형식 변환</p></div>
           </aside>
         </div>
       </article>
 
-      <article id="classification" class="project project-dark section-shell">
+      <article id="classification" class="project section-shell">
         <header class="project-head">
           <div><p class="section-no">02 / AI PROJECT</p><h2>상품 카테고리<br>자동 분류·분석 도구</h2></div>
           <div class="project-meta"><span>AI MODELING</span><span>DATA</span><span>2025</span></div>
@@ -102,15 +92,15 @@
           <div class="case-study">
             <section><h3>배경</h3><p>온라인 커머스의 대규모 상품을 사람이 일일이 분류하는 반복 업무를 줄이기 위해, 상품명 기반 자동 분류 모델과 성능 분석 도구를 개발했습니다.</p></section>
             <section><h3>문제</h3><p>카테고리별 데이터 수의 차이가 커 Accuracy만으로는 소수 카테고리의 취약점을 놓칠 수 있었습니다. 제가 실험한 BERT는 학교 AI 서버의 제한된 GPU 메모리에서 학습이 반복 중단돼 운영 가능한 비교 결과를 만들기 어려웠습니다.</p></section>
-            <section><h3>판단과 실행</h3><p>완료하지 못한 BERT 실험은 최종 후보에서 제외하고, 팀이 개발한 로지스틱 회귀와 LSTM을 동일 조건에서 비교했습니다. 전체 정확도와 함께 Macro F1-Score를 주요 지표로 삼아 데이터가 적은 카테고리까지 평가하도록 기준을 세웠습니다.</p></section>
+            <section><h3>설계</h3><p>전체 정확도와 함께 Macro F1-Score를 주요 지표로 삼아 데이터가 적은 카테고리까지 평가하도록 기준을 세웠습니다. 운영 환경에서 비교 가능한 로지스틱 회귀와 LSTM을 최종 후보로 정했습니다.</p></section>
+            <section><h3>구현</h3><p>BERT 전용 토크나이저를 적용해 모델 학습을 실험하고, 팀이 개발한 로지스틱 회귀와 LSTM을 동일 조건에서 비교했습니다. 모델별 성능과 카테고리별 취약점을 확인하는 웹 분석 도구도 구현했습니다.</p></section>
             <section><h3>결과</h3><p>팀은 로지스틱 회귀의 정규화 강도를 조정해 Macro F1-Score를 0.91에서 0.94로 높였습니다. 모델별 성능과 카테고리별 취약점을 확인하는 웹 도구도 완성해 두 차례 경진대회에서 수상했습니다.</p></section>
             <section><h3>배운 점</h3><p>복잡한 모델 자체보다 데이터 특성과 자원 제약을 정확히 읽는 것이 중요했습니다. AI가 실제 업무 개선으로 이어지려면 재현 가능한 비교 기준과 운영 가능한 선택이 필요합니다.</p></section>
           </div>
 
           <aside class="project-aside">
-            <div class="note note-pink rotate-left"><span class="tape"></span><strong>MY ROLE</strong><p>BERT 모델 실험</p><p>프로젝트 전반 진행</p><p>평가 지표 선정·모델 비교</p></div>
-            <figure class="evidence evidence-dark evidence-original"><button type="button" data-lightbox="assets/classification-performance-original.png" aria-label="카테고리별 모델 성능 비교 크게 보기"><img src="assets/classification-performance-original.png" alt="카테고리별 LSTM과 로지스틱 회귀 F1 점수 비교"></button><figcaption>Category-level F1 comparison · 원본 실험 결과</figcaption></figure>
-            <figure class="evidence evidence-dark evidence-original"><button type="button" data-lightbox="assets/classification-system-original.png" aria-label="웹 시스템 구조 크게 보기"><img src="assets/classification-system-original.png" alt="분류 모델 분석 웹 서비스의 원본 시스템 아키텍처"></button><figcaption>Analysis system architecture · 원본 설계 자료</figcaption></figure>
+            <div class="note note-yellow rotate-left"><span class="tape"></span><strong>MY ROLE</strong><p>BERT 모델 실험</p><p>프로젝트 전반 진행</p><p>평가 지표 선정·모델 비교</p></div>
+            <figure class="evidence evidence-original"><button type="button" data-lightbox="assets/classification-performance-original.png" aria-label="카테고리별 모델 성능 비교 크게 보기"><img src="assets/classification-performance-original.png" alt="카테고리별 LSTM과 로지스틱 회귀 F1 점수 비교"></button><figcaption>Category-level F1 comparison · 원본 실험 결과</figcaption></figure>
           </aside>
         </div>
       </article>
@@ -123,21 +113,23 @@
 
         <div class="project-grid compact-grid">
           <div class="case-study">
-            <section><h3>문제 정의</h3><p>제품을 살 때는 가격과 사용 가치를, 보유한 뒤에는 수리·교체·판매 시점을 따로 찾아봐야 합니다. 흩어진 근거를 하나의 의사결정 흐름으로 묶고자 했습니다.</p></section>
-            <section><h3>구현</h3><p>자연어 질문을 AI Agent가 구조화하고 Gemini와 검색 데이터를 연계해 구매·대여·대기 또는 수리·교체·판매 선택지를 비교하도록 설계했습니다. 결과는 근거와 유의사항을 포함한 일정한 형식으로 제공하고 사용자의 아이템·결정 이력과 연결했습니다.</p></section>
-            <section><h3>나의 역할</h3><p>2인 팀에서 문제 정의와 기능 기획, AI 분석 흐름 설계를 맡았습니다. 구현에는 AI Agent를 활용했으며, 원하는 사용자 흐름이 구현되도록 요구사항을 구체화하고 생성 결과를 확인했습니다.</p></section>
+            <section><h3>배경</h3><p>제품을 구매하기 전과 보유한 뒤의 선택을 한곳에서 지원하는 서비스를 2인 팀으로 기획했습니다.</p></section>
+            <section><h3>문제</h3><p>구매 단계에서는 가격과 사용 가치를, 보유한 뒤에는 수리·교체·판매 시점을 각각 찾아봐야 했습니다. 판단에 필요한 근거가 흩어져 있어 사용자가 선택지를 직접 정리해야 했습니다.</p></section>
+            <section><h3>설계</h3><p>자연어 질문을 AI Agent가 구조화하고 Gemini와 검색 데이터를 연계해 선택지를 비교하도록 분석 흐름을 설계했습니다. 결과에는 근거와 유의사항을 포함하고 출력 형식을 일정하게 맞췄습니다.</p></section>
+            <section><h3>구현</h3><p>구매·대여·대기와 수리·교체·판매를 비교하는 웹 흐름을 구현하고, 분석 결과를 사용자의 아이템·결정 이력과 연결했습니다.</p></section>
+            <section><h3>결과</h3><p>제품의 구매 전후 의사결정을 하나의 흐름에서 지원하는 웹 서비스를 완성했습니다.</p></section>
             <section><h3>배운 점</h3><p>AI에 자유롭게 답하게 하기보다 필요한 정보와 출력 형식을 명확히 구조화할수록 결과를 서비스에서 안정적으로 활용할 수 있었습니다. 또한 근거를 확인할 수 있는 구조와 사용자 데이터 보호가 AI 서비스의 신뢰를 만든다는 점을 배웠습니다.</p></section>
           </div>
 
           <aside class="project-aside">
-            <figure class="evidence"><button type="button" data-lightbox="assets/buycycle-architecture.png" aria-label="BuyCycle 서비스 구조 크게 보기"><img src="assets/buycycle-architecture.png" alt="BuyCycle 서비스 아키텍처"></button><figcaption>Server-side AI architecture · 발표자료</figcaption></figure>
+            <div class="note note-yellow rotate-right"><span class="tape"></span><strong>MY ROLE</strong><p>문제 정의·기능 기획</p><p>AI 분석 흐름 설계</p><p>AI Agent 활용 구현·결과 검증</p></div>
           </aside>
         </div>
       </article>
     </section>
 
     <section id="experience" class="experience section-shell" aria-labelledby="experience-title">
-      <div class="experience-head"><p class="section-no" id="experience-title">04 / MORE EXPERIENCE</p></div>
+      <div class="experience-head"><p class="section-no" id="experience-title">MORE EXPERIENCE</p></div>
       <div class="experience-list">
         <article><span class="experience-year">2023</span><div><h3>Dofarming</h3><ul class="achievement-list"><li>GPT-4 API를 활용한 도파민 디톡스 활동 추천 서비스 백엔드 개발</li><li>대구를 빛내는 SW 해커톤 · 대상</li></ul></div><span class="experience-tag">Next.js · TypeScript · GPT-4</span></article>
         <article><span class="experience-year">2024</span><div><h3>학술동아리 해달 운영진</h3><p>입부 테스트 문제·채점 기준 검증 및 GitHub Actions 자동 채점 환경 운영</p></div><span class="experience-tag">GitHub Actions · Collaboration</span></article>
@@ -146,15 +138,11 @@
       </div>
     </section>
 
-    <section id="contact" class="contact section-shell">
-      <h2>사용자에게 당연한 편리함을<br>제공하겠습니다.</h2>
+    <!-- <section id="contact" class="contact section-shell">
       <a class="email" href="mailto:sally.saem.ko@gmail.com">sally.saem.ko@gmail.com <span>↗</span></a>
-      <p class="contact-note">Backend Developer · Ko Eunsaem</p>
-    </section>
+    </section> -->
 
   </main>
-
-  <footer><span>© 2026 KO EUNSAEM</span><a href="#top">BACK TO TOP ↑</a></footer>
 
   <dialog class="lightbox" aria-label="프로젝트 자료 크게 보기">
     <button type="button" class="lightbox-close" aria-label="닫기">CLOSE ×</button>
